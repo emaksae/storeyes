@@ -1,0 +1,45 @@
+.layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: var(--color-accent);
+    font-family: "Anton", sans-serif;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+    font-size: 26px;
+  }
+
+  &__link {
+    transition: 0.5s;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  &__footer {
+    padding-block: 20px
+  }
+}

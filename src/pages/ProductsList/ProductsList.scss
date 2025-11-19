@@ -1,0 +1,27 @@
+.products-list {
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 5px 10px;
+    border: 2px solid var(--color-background-card);
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+
+    &:focus {
+      border-color: var(--color-accent);
+    }
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

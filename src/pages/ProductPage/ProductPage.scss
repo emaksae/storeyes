@@ -1,0 +1,68 @@
+.product-page {
+  display: flex;
+  background-color: var(--color-background-card);
+  border-radius: 35px;
+  margin: auto;
+
+  &__image {
+    max-width: 50%;
+    flex: 1;
+    padding: 30px;
+    height: 550px;
+    object-fit: contain;
+    padding-bottom: 30px;
+    border-radius: 15px;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+  }
+
+  &__title {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__description {
+    flex: 1;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__back, 
+  &__like {
+    display: flex;
+    flex: 1;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: var(--color-base);
+    background-color: var(--color-background);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+      border: 1px solid var(--color-base);
+    }
+  }
+
+  &__like {
+    font-size: 30px;
+
+    &.liked {
+      font-size: 40px;
+      color: rgb(228, 117, 117);
+    }
+  }
+
+}
