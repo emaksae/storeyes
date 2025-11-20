@@ -5,6 +5,7 @@
   background-color: var(--color-background-card);
   border-radius: 35px;
   margin: auto;
+  border: 2px solid var(--color-accent);
 
   @include mobile {
     display: grid;
